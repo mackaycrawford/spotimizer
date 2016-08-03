@@ -15,12 +15,21 @@
 $stationBudgetTable = $("#stationBudgetTable");
       
     $stationBudgetTable.handsontable({
-    data: [['ABC', '10'],['BBC', '10'],['CBS', '10']],
+    data: [['ABC', '10', ''],['BBC', '10', ''],['CBS', '10', '']],
     rowHeaders: false,
-    colHeaders: ["Station", "Budget Percent"],
+    colHeaders: ["Station", "Goal Budget Percent", "Actual Budget Percent"],
     contextMenu: false, 
     minSpareRows: 1
   });    
       
+$availsTable= $("#availsTable");
+      
+    $availsTable.handsontable({
+    data: [['ABC', 'Nightly News', 'PM', '12.2', '700']],
+    rowHeaders: false,
+    colHeaders: ["Station", "Program", "Daypart", "Rating", "Cost"],
+    contextMenu: false, 
+    minSpareRows: 1
+  });    
       
   })
